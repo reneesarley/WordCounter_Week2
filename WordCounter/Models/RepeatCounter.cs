@@ -55,13 +55,10 @@ namespace WordCounter.Models
         public string StripPunctuation(string word)
         {
             var noPunctuationString = new StringBuilder();
+
             for (int i = 0; i < word.Length; ++i)
             {
-                if (!Char.IsPunctuation(word[i]) && i == word.Length - 1)
-                {
-                    noPunctuationString.Append(word[i]);
-                }
-                else if (i != word.Length - 1)
+                if (!Char.IsPunctuation(word[i]) && i == word.Length - 1 || i != word.Length - 1 )
                 {
                     noPunctuationString.Append(word[i]);
                 }
