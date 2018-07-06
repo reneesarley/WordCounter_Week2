@@ -12,7 +12,6 @@ _Both the word to search for and the string will be provided by the user._
 ## Setup/Installation Requirements
 
 * _Downloaded the project from the GitHub repo here: https://github.com/reneesarley/WordCounter.git_
-* _View the GH Pages site here:_
 * _Compile the Program.cs and RepeatCounter.cs files in the terminal using: $ mcs Program.cs RepeatCounter.cs_
 * _If using Mono, run the Program.exe file using: $ mono Program.exe_
 

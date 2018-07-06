@@ -9,10 +9,12 @@ namespace WordCounter.Models
         private int _wordCounter;
         private string _wordToFind;
         private string _stringToSearch;
+        private static List<RepeatCounter> _instances = new List<RepeatCounter> {};
 
         public RepeatCounter()
         {
             _wordCounter = 0;
+            _instances.Add(this);
         }
 
         public int GetWordCounter()
