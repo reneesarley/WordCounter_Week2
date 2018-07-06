@@ -22,6 +22,7 @@ namespace WordCounter.Controllers
             RepeatCounter newCounter = new RepeatCounter();
             newCounter.SetWordToFind(wordToFind);
             newCounter.SetStringToSearch(stringToSearch);
+            newCounter.UpdateWordCounter();
 
             return View(newCounter);
         }
