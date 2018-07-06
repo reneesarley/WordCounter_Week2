@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCounter", "WordCounter\WordCounter.csproj", "{260B908E-1EB8-4EA4-97E7-C6FC82DE9BD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCounter.Tests", "WordCounter.Tests\WordCounter.Tests.csproj", "{F7074879-C31D-4DE3-BB1B-F67FD963F982}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{260B908E-1EB8-4EA4-97E7-C6FC82DE9BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{260B908E-1EB8-4EA4-97E7-C6FC82DE9BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{260B908E-1EB8-4EA4-97E7-C6FC82DE9BD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7074879-C31D-4DE3-BB1B-F67FD963F982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7074879-C31D-4DE3-BB1B-F67FD963F982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7074879-C31D-4DE3-BB1B-F67FD963F982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7074879-C31D-4DE3-BB1B-F67FD963F982}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
