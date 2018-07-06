@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Scrabble Scorer";
+}
+
+<form id="scorerForm" action="/scoreResult" method="post">
+    <div class="form-group">
+        <label for="wordToScore">Enter a word to search for</label>
+        <input name="wordToScore" type="text" class="form-control" id="wordToScore" placeholder="Your Scrabble Word" required>
+    </div>
+    <button type='submit' class='btn btn-success'>Get Your Word Score</button>
+</form>
