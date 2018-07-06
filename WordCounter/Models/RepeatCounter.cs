@@ -65,16 +65,5 @@ namespace WordCounter.Models
             }
             return noPunctuationString.ToString();
         }
-        public bool VerifyJustOneWord()
-        {
-            if (_wordToFind.Contains(" "))
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
     }
 }
