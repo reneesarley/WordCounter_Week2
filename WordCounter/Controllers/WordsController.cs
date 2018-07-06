@@ -14,5 +14,11 @@ namespace WordCounter.Controllers
         {
             return View();
         }
+
+        [HttpPost("scoreResult")]
+        public ActionResult ScoreResult()
+        {
+            return View();
+        }
     }
 }

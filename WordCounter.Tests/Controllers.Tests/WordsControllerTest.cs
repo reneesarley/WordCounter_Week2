@@ -23,5 +23,17 @@ namespace WordCounter.Tests.Controllers.Tests
             //Assert
             Assert.IsInstanceOfType(wordScorerView, typeof(ViewResult));
         }
+        [TestMethod]
+        public void ScoreResult_ReturnsCorrectView_True()
+        {
+            //Arrange
+            WordsController controller = new WordsController();
+
+            //Act
+            ActionResult scoreResultView = controller.ScoreResult();
+
+            //Assert
+            Assert.IsInstanceOfType(scoreResultView, typeof(ViewResult));
+        }
     }
 }
