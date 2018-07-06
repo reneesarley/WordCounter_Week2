@@ -49,6 +49,7 @@ namespace WordCounter.Tests.Models.Tests
             //Assert
             Assert.AreEqual(result, 1);
         }
+
         [TestMethod]
         public void BuildLetterValueDictionary_MatchValuesToLetters_Int()
         {

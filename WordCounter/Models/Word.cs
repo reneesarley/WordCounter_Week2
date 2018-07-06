@@ -15,6 +15,7 @@ namespace WordCounter.Models
         private List<char> _fivePointLetters = new List<char>() { 'k' };
         private List<char> _eightPointLetters = new List<char>() { 'j', 'x' };
         private List<char> _tenPointLetters = new List<char>() { 'q', 'z' };
+        private List<Word> _allWords = new List<Word> {};
 
         public Word()
         {
@@ -25,6 +26,7 @@ namespace WordCounter.Models
             this.BuildLetterValueDictionary(_fivePointLetters, 5);
             this.BuildLetterValueDictionary(_eightPointLetters, 8);
             this.BuildLetterValueDictionary(_tenPointLetters, 10);
+      
         }
 
         public void BuildLetterValueDictionary(List<char> pointList, int pointValue)
@@ -53,7 +55,7 @@ namespace WordCounter.Models
         {
             return _wordScore;
         }
-
+ 
         public int GetLetterValue(char letter)
         {
             return _letterValues[letter];
