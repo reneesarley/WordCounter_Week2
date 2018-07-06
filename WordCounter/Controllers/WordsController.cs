@@ -16,9 +16,13 @@ namespace WordCounter.Controllers
         }
 
         [HttpPost("scoreResult")]
-        public ActionResult ScoreResult()
+        public ActionResult ScoreResult(string wordToScore)
         {
-            return View();
+            Word newWord = new Word();
+            newWord.SetWordToScore(wordToScore);
+            newWord.CalculateWordScore();
+
+            return View(newWord);
         }
     }
 }

@@ -8,12 +8,12 @@ h2, h4, label {
     text-align:center;
 }
 
-.userInput {
+.resultDetail {
     color: green;
     font-weight: bold;
 }
 
-.countResult {
+.result {
     text-align:center;
 }
 

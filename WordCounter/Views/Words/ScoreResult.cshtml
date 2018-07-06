@@ -1,1 +1,5 @@
-﻿<p>The score for YOUR WORD is SCORE</p>
+﻿@{
+    ViewData["Title"] = "Scrabble Score Page";
+}
+<h4>Your score results are:</h4>
+<p class="result"> Your score for <br><span class="resultDetail">@Model.GetWordToScore()</span> <br>is <span class="resultDetail"> @Model.GetWordScore()</span></p>

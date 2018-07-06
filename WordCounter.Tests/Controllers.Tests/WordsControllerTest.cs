@@ -30,10 +30,24 @@ namespace WordCounter.Tests.Controllers.Tests
             WordsController controller = new WordsController();
 
             //Act
-            ActionResult scoreResultView = controller.ScoreResult();
+            ActionResult scoreResultView = controller.ScoreResult("testWord");
 
             //Assert
             Assert.IsInstanceOfType(scoreResultView, typeof(ViewResult));
+        }
+
+        [TestMethod]
+        public void ScoreResult_HasCorrectModelType_RepeatCounter()
+        {
+            //Arrange
+            WordsController controller = new WordsController();
+            ViewResult scoreResultDataType = controller.ScoreResult("testWord") as ViewResult;
+
+            //Act
+            var result = scoreResultDataType.ViewData.Model;
+
+            //Assert
+            Assert.IsInstanceOfType(result, typeof(Word));
         }
     }
 }
