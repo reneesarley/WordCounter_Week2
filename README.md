@@ -1,4 +1,4 @@
-# _Word Counter_
+# _Word Counter & Scrabble Scorer_
 
 #### _Counts how many times a specific words is in a string, 7/6/18_
 
@@ -6,17 +6,16 @@
 
 ## Description
 
-_This application will count how many times a specific word appears in a string and return the count to the user._
-_Both the word to search for and the string will be provided by the user._
+_This application has two uses:_
+* _It will count how many times a specific word appears in a string and return the count to the user. Both the word to search for and the string will be provided by the user._
+* _It will tell you the scrabble score of word. The word will be provided by the user._
 
 ## Setup/Installation Requirements
 
 * _Downloaded the project from the GitHub repo here: https://github.com/reneesarley/WordCounter.git_
-* _Compile the Program.cs and RepeatCounter.cs files in the terminal using: $ mcs Program.cs RepeatCounter.cs_
-* _If using Mono, run the Program.exe file using: $ mono Program.exe_
+* _From the WordCounter directory restore, build and run through the terminal_
 
-## Specifications
-
+## Specifications for Word Counter
 
 |Behavior  |     Input     | Output|
 |:----------:|:-------------:|:------:|
@@ -34,6 +33,14 @@ _Both the word to search for and the string will be provided by the user._
 | Don't remove punctuation from anywhere but the end of the word | To-Do  | To-Do |
 | If string is more than one word return false | "dog house" | false |
 
+## Specifications for Scrabble Scorer
+
+|Behavior  |     Input     | Output|
+|:----------:|:-------------:|:------:|
+| Convert string to all lowercase| "Car" | "car"|
+| Convert string to List or characters| "car" | {"c", "a", "r"} |
+| Return value of letter | "a"  | 1 |
+| Add letter score to word score | 1 | wordScore = wordScore + 1 |
 
 ## Known Bugs
 
