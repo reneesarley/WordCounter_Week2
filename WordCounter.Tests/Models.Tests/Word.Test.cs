@@ -82,36 +82,19 @@ namespace WordCounter.Tests.Models.Tests
         }
 
         [TestMethod]
-        public void ConvertWordToArrayAndLower_CreateListOfLetters_char()
+        public void CalculateWordScore_CalculateScoreForWord_Int()
         {
-            //Arrange
-            string testWord = "CAR";
-            char[] testArray = new char[] { 'c', 'a', 'r' };
+            //Arrage
+            int testScore = 5;
             Word newWord = new Word();
 
             //Act
-            newWord.SetWordToScore(testWord);
-            char[] resultArray = newWord.ConvertWordToArrayAndLower();
+            newWord.SetWordToScore("car");
+            newWord.CalculateWordScore();
+            int resultScore = newWord.GetWordScore();
 
             //Assert
-            CollectionAssert.AreEqual(testArray, resultArray);
-
+            Assert.AreEqual(resultScore, testScore);
         }
-
-        //[TestMethod]
-        //public void CalculateWordScore_CalculateScoreForWord_Int()
-        //{
-        //    //Arrage
-        //    char[] testArray = new char[] { 'c', 'a', 'r' };
-        //    int testScore = 5;
-        //    Word newWord = new Word();
-
-        //    //Act
-        //    newWord.CalculateWordScore();
-        //    int resultScore = newWord.GetWordScore();
-
-        //    //Assert
-        //    Assert.AreEqual(resultScore, testScore);
-        //}
     }
 }

@@ -59,13 +59,13 @@ namespace WordCounter.Models
             return _letterValues[letter];
         }
 
-        public char[] ConvertWordToArrayAndLower()
-        {
-            string lowerWordToScore = _wordToScore.ToLower();
-            char[] letterArray = lowerWordToScore.ToCharArray();
-            //CalculateWordScore(letterArray);
-            return letterArray;
-        }
+        //public char[] ConvertWordToArrayAndLower()
+        //{
+        //    string lowerWordToScore = _wordToScore.ToLower();
+        //    char[] letterArray = lowerWordToScore.ToCharArray();
+        //    //CalculateWordScore(letterArray);
+        //    return letterArray;
+        //}
 
         //public void CalculateWordScore(char[] letterArray)
         //{
