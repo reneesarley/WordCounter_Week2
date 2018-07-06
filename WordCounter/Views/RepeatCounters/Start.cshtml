@@ -2,7 +2,16 @@
     ViewData["Title"] = "Home Page";
 }
 
-<form>
+<form id="startForm" action="repeatCounters/count" method="post">
+    <div class="form-group">
+        <label for="wordToFind">Enter a word to search for</label>
+        <input name="wordToFind" type="text" class="form-control" id="wordToFind" placeholder="Your Word" required>
+    </div>
+    <div class="form-group">
+        <label for="stringToSearch">Length</label>
+        <input name="stringToSearch" type="text" class="form-control" id="stringToSearch" placeholder="Your Sentence" required>
+    </div>
 
-    the form will go here
+    <button type='submit' class='btn btn-success'>Count</button>
+
 </form>
