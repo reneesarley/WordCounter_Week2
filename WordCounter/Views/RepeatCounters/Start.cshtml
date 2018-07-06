@@ -3,15 +3,14 @@
 }
 
 <form id="startForm" action="/count" method="post">
-    <div class="form-group">
+    <div class="form-group" >
         <label for="wordToFind">Enter a word to search for</label>
         <input name="wordToFind" type="text" class="form-control" id="wordToFind" placeholder="Your Word" required>
     </div>
     <div class="form-group">
-        <label for="stringToSearch">Length</label>
-        <input name="stringToSearch" type="text" class="form-control" id="stringToSearch" placeholder="Your Sentence" required>
+        <label for="stringToSearch">Enter a sentence that you'd like searched for your word</label>
+        <textarea rows="5" cols="50" name="stringToSearch" class="form-control" id="stringToSearch" placeholder="Your Sentence" required></textarea>
     </div>
-
     <button type='submit' class='btn btn-success'>Count</button>
 
 </form>
