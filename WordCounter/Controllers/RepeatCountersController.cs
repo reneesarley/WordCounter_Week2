@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WordCounter.Models;
 
 
 namespace WordCounter.Controllers
@@ -16,9 +17,13 @@ namespace WordCounter.Controllers
         }
 
         [HttpPost("/count")]
-        public ActionResult Count()
+        public ActionResult Count(string wordToFind, string stringToSearch)
         {
-            return View();
+            RepeatCounter newCounter = new RepeatCounter();
+            newCounter.SetWordToFind(wordToFind);
+            newCounter.SetStringToSearch(stringToSearch);
+
+            return View(newCounter);
         }
     }
 }
